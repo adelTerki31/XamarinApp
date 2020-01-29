@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="hmin309_IOT.Views.MessageDetailPage"
+             Title="{Binding id}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="msg_id" FontSize="Medium" />
+        <Label Text="{Binding Message.id}" d:Text="Message id" FontSize="Small" />
+        <Label Text="student_id" FontSize="Medium" />
+        <Label Text="{Binding Message.student_id}" d:Text="student id" FontSize="Small" Margin="0" />
+        <Label Text="student_message" FontSize="Medium" />
+        <Label Text="{Binding Message.student_message}" d:Text="student message" FontSize="Small" Margin="0" />
+        <Label Text="gps_long" FontSize="Medium" />
+        <Label Text="{Binding Message.gps_long}" d:Text="gps_long" FontSize="Small" Margin="0" />
+        <Label Text="gps_lat" FontSize="Medium" />
+        <Label Text="{Binding Message.gps_lat}" d:Text="gps_lat" FontSize="Small" Margin="0" />
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>hmin309_IOT</id>
+    <version>1.0.0</version>
+    <authors>hmin309_IOT</authors>
+    <owners>hmin309_IOT</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Sendgrid" version="9.12.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.3.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="4.3.0.908675" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\user\source\repos\hmin309_IOT\hmin309_IOT\hmin309_IOT\bin\Debug\netstandard2.0\hmin309_IOT.dll" target="lib\netstandard2.0\hmin309_IOT.dll" />
+  </files>
+</package>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="hmin309_IOT.Views.NewMessagePage"
+             Title="New Message">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="msg_id" FontSize="Medium" />
+            <Entry Text="{Binding Message.id}" d:Text="Message id" FontSize="Small" />
+            <Label Text="student_id" FontSize="Medium" />
+            <Editor Text="{Binding Message.student_id}" d:Text="student id" FontSize="Small" Margin="0" />
+            <Label Text="student_message" FontSize="Medium" />
+            <Editor Text="{Binding Message.student_message}" d:Text="student message" FontSize="Small" Margin="0" />
+            <Label Text="gps_long" FontSize="Medium" />
+            <Editor Text="{Binding Message.gps_long}" d:Text="gps_long" FontSize="Small" Margin="0" />
+            <Label Text="gps_lat" FontSize="Medium" />
+            <Editor Text="{Binding Message.gps_lat}" d:Text="gps_lat" FontSize="Small" Margin="0" />
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
